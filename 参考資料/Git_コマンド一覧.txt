@@ -157,6 +157,8 @@ git checkout
 # ステージングに追加したファイルの取消
 git reset HEAD <ファイル名/ディレクトリ名>
 　.：全変更を取り消す
+　--soft：ワークディレクトリの内容はそのままでコミットだけを取り消す
+　--hard：コミット取り消した上でワークディレクトリの内容も取り消す
 
 # ファイルの削除
 git rm <ファイル名>
@@ -189,8 +191,7 @@ git stash (save)
   list：避難したした作業を確認
 
 ## 避難した作業を復元する
-git stash
-　apply：最新の作業を復元する
+git stash apply
 　apply --index：ステージの状況も復元する
 　apply <スタッシュ名>：特定の作業を復元する
 　例）git stash apply stash@{1}
