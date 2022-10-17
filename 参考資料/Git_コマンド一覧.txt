@@ -72,7 +72,7 @@ git remote show <リモート名>
 # gitブランチの情報を表示する
 git branch
 　-a：全てのブランチを表示（リモート込み）
-　　リモートブランチは、「remote/origin/<ブランチ>」で参照できる    
+　　リモートブランチは、「remote/origin/<ブランチ>」で参照できる
 　　例）remotes/origin/master
 　<ブランチ名>：ブランチを新規作成（ブランチの切り替えは行わない）
 　-m <ブランチ名>：ブランチ名を変更
